@@ -69,7 +69,8 @@ def list_home_town_items():
         'population': '2.665 million'
     }
     home_town_items = []
-    
+    for key, value in home_town.items():
+        home_town_items.append(f"{key} = {value}")
     return home_town_items
 
 
